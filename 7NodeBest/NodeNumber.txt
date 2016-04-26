@@ -1,0 +1,3 @@
+Number of Nodes: 7
+Error: 0.124982000056
+Number of Runs: 7366
