@@ -1,0 +1,85 @@
+Pruning not implemented
+Initial Error: 0.26666666666666666
+outlook = sunny :
+	NO
+outlook = overcast :
+	YES
+outlook = rainy :
+	wind = weak :
+		YES
+	wind = strong :
+		NO
+New Error: 0.3333333333333333
+outlook = sunny :
+	humidity = high :
+		NO
+	humidity = normal :
+		wind = weak :
+			YES
+		wind = strong :
+			temperature = hot :
+				YES
+			temperature = mild :
+				NO
+			temperature = cool :
+				NO
+outlook = overcast :
+	YES
+outlook = rainy :
+	YES
+New Error: 0.4
+outlook = sunny :
+	humidity = high :
+		NO
+	humidity = normal :
+		wind = weak :
+			YES
+		wind = strong :
+			temperature = hot :
+				YES
+			temperature = mild :
+				NO
+			temperature = cool :
+				NO
+outlook = overcast :
+	YES
+outlook = rainy :
+	NO
+New Error: 0.2
+outlook = sunny :
+	humidity = high :
+		NO
+	humidity = normal :
+		wind = weak :
+			YES
+		wind = strong :
+			temperature = hot :
+				YES
+			temperature = mild :
+				NO
+			temperature = cool :
+				NO
+outlook = overcast :
+	YES
+outlook = rainy :
+	NO
+
+
+NO
+NO
+YES
+NO
+NO
+NO
+YES
+NO
+YES
+NO
+NO
+YES
+YES
+NO
+YES
+
+
+Training error = 0.2222222222222222 , Test error = 0.2
